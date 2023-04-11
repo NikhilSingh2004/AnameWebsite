@@ -1,0 +1,2 @@
+web: gunicorn genartful.wsgi --log-file - 
+
