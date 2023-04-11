@@ -1,0 +1,147 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> {{title}} | Genartful</title>
+    <link rel='icon' href='{% static '/static/icon.jpg' %}'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body style="background-color: rgb(249, 255, 255);">
+
+    <!-- Header -->
+
+    <!-- Navbar Starts -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white fw-bold">
+        <div class="container-fluid">
+            <img class="img-fluid rounded-circle" style="width: 40px; height: 40px;" src="{% static '/static/icon.jpg' %}" alt="Img"
+                name="Logo">
+            <a class="navbar-brand mx-2 my-2">Genartful </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container"></div>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/about/" >About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            New
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/new_candels/">Candels</a></li>
+                            <li><a class="dropdown-item" href="/new_genart/">Resin Art</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact/">Contact</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                    <a class="btn btn-outline-success active mx-2 px-2" href="SignUp.html" target="_blank">SignUp</a>
+                    <a class="btn btn-outline-success active mx-2 px-2" href="LogIn.html" target="_blank">LogIn</a>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navber ends-->
+
+    <!-- Detail Page start -->
+
+    <div class="container text-center my-5">
+        <img src="/media/{{Data.product_image}}" style="width: 500px; height: 500px;" alt="Img" class="img-fluid rounded" />
+        <div class="container text-center">
+            <h2 class="display-4 fw-bold"> 
+                {{Data.product_name}}
+                <!-- this is the name of the product  -->
+            </h2>
+            <p class="display-6">
+                {{Data.product_title}}
+                <!-- this is the title of the product. -->
+            </p>
+            <p>
+                {{Data.product_dis}}
+                <!-- This is the details of the product -->
+            </p>
+            <br>
+            <hr class="featurette-divider">
+            <br>
+            <div class="container">
+                <a class="btn btn-dark w-100" href="/billingaddress/{{Data.id}}">Order</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Details Page Ends-->
+
+   <!-- Footer -->
+
+   <footer class="d-flex flex-wrap justify-content-between align-items-center border-top bg-dark">
+    <div class="col-md-4 d-flex align-items-center">
+        <h3 class="text-center mb-md-0 text-white display-6">&nbsp;&nbsp;Genartful, <small>New Generation
+                Art</small> </h3>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex pt-3 ">
+        <li class="ms-3">
+            <a class="text-muted" href="https://www.instagram.com/gen_artful/?igshid=ZDdkNTZiNTM%3D&__coig_restricted=1" target="_blank">
+                <div class="text-left">
+                    <img class="d-block mx-auto mb-4 rounded-circle" src="{% static '/static/instagram.png' %}" alt="" width="50" height="50">
+                </div>
+            </a>
+        </li>
+        <li class="ms-3">
+            <a class="text-muted" href="https://www.facebook.com/profile.php?id=100090198452132&mibextid=ZbWKwL" target="_blank">
+                <div class="text-left">
+                    <img class="d-block mx-auto mb-4 rounded-circle" src="{% static '/static/facebook.png' %}" alt="" width="50" height="50">
+                </div>
+            </a>
+        </li>
+        <li class="ms-3">
+            <a class="text-muted" href="#" target="_blank">
+                <div class="text-left">
+                    <img class="d-block mx-auto mb-4 rounded-circle" src="{% static '/static/linkedin.png' %}" alt="" width="50" height="50">
+                </div>
+            </a>
+        </li>
+        <li class="ms-3">
+            <a class="text-muted" href="#" target="_blank">
+                <div class="text-left">
+                    <img class="d-block mx-auto mb-4 rounded-circle" src="{% static '/static/twitter.png' %}" alt="" width="50" height="50">
+                </div>
+            </a>
+        </li>
+        <li class="ms-3">
+            <a class="text-muted" href="#" target="_blank">
+                <div class="text-left"></div>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+<!-- Footer Ends -->
+
+<!-- Bootstrap JS link -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS Link ends-->
+
+</body>
+
+</html>

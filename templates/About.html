@@ -1,0 +1,174 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> {{title}} | Genartful</title>
+    <link rel='icon' href='{% static '/static/icon.jpg' %}'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body style="background-color: rgb(249, 255, 255);">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white fw-bold">
+        <div class="container-fluid">
+            <img class="img-fluid rounded-circle" style="width: 40px; height: 40px;" src="{% static '/static/icon.jpg' %}" alt="Img"
+                name="Logo">
+            <a class="navbar-brand mx-2 my-2">Genartful </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container"></div>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link  " aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about/" >About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            New
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/new_candels/">Candels</a></li>
+                            <li><a class="dropdown-item" href="/new_genart/">Resin Art</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact/">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navber ends-->
+
+
+    <!-- About Body starts -->
+
+    <!-- Hero -->
+
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <div class="col-lg-6 mx-auto">
+            <div class="text-center">
+                <img class="d-block mx-auto mb-4 rounded-circle" src="{% static '/static/icon.jpg' %}" alt="" width="200" height="200">
+            </div>
+            <p class="display-4">
+                New Generation Art
+            </p>
+            <p class="display-6 ">
+                We feel happy to customize products for you to feel special and memorable for your lifetime.
+            </p>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+            <div class="container px-5">
+                <img src="{% static '/static/cardel13.jfif' %}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
+                    width="700" height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <!-- Image -->
+
+    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="cardel6.jfif" class="d-block w-100" alt="Img">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="display-6 bg-dark text-center text-light">We are Mumbai Based Home Decoratives Co.</h1>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Starting the Our Founder -->
+
+    <div class="container">
+        <div class="container my-5 mx-2">
+            <h2 class="pb-2 border-bottom">Our Founder</h2>
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2"> <!-- class="col-md-7 order-md-2" -->
+                    <div class="container my-5 pt-5 py-5">
+                        <h2 class="featurette-heading">Aname Emani <span class="text-muted"> 19 June 2001</span>
+                        </h2>
+                        <p class="lead">
+                            A student of Business Management with an artistic mind & soul. I am creative by nature and have started my creative journey with paintings and now into making my own designed Fragrance candles for home decor & soulful relaxation. This is my first initiative am promoting from the comforts of my home. All products are personally hand made. Please go through my designer candles in the product page & you can reach me by email or whatsapp number given below ...... Anam Emani
+                        </p>
+                    </div>
+                </div>
+                <div class="my-5 col-md-5 order-md-1">
+                    <img class="img-fluid rounded-circle" style="width: 350px; height: 350px;" src="{% static '/static/Founder(A).jpg' %}" alt="Img"
+                        name="Founder">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ending the Our Founder --> 
+
+    <!-- Footer -->
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top bg-dark">
+        <div class="col-md-4 d-flex align-items-center">
+            <h3 class="text-center mb-md-0 text-white display-6">&nbsp;&nbsp;Genartful, <small>New Generation
+                    Art</small> </h3>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex pt-3 ">
+            <li class="ms-3">
+                <a class="text-muted" href="https://www.instagram.com/gen_artful/?igshid=ZDdkNTZiNTM%3D&__coig_restricted=1" target="_blank">
+                    <div class="text-left">
+                        <img class="d-block mx-auto mb-4 rounded-circle" src="{% static '/static/instagram.png' %}" alt="" width="50" height="50">
+                    </div>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-muted" href="https://www.facebook.com/profile.php?id=100090198452132&mibextid=ZbWKwL" target="_blank">
+                    <div class="text-left">
+                        <img class="d-block mx-auto mb-4 rounded-circle" src="{% static '/static/facebook.png' %}" alt="" width="50" height="50">
+                    </div>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-muted" href="#" target="_blank">
+                    <div class="text-left">
+                        <img class="d-block mx-auto mb-4 rounded-circle" src="{% static '/static/linkedin.png' %}" alt="" width="50" height="50">
+                    </div>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-muted" href="#" target="_blank">
+                    <div class="text-left">
+                        <img class="d-block mx-auto mb-4 rounded-circle" src="{% static '/static/twitter.png' %}" alt="" width="50" height="50">
+                    </div>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-muted" href="#" target="_blank">
+                    <div class="text-left"></div>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- Footer Ends -->
+
+    <!-- Bootstrap JS link -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS Link ends-->
+
+</body>
+
+</html>
